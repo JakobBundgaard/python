@@ -1,0 +1,15 @@
+touch <filename> -> creates file
+cp ex1.acc myfile.acc -> copy and name file
+cat <filename> -> shows filecontent
+rm myfile.acc -> deletes file
+rm -r test -> deletes dir test and all files
+mkdir -p newtest/newtest/newtest -> makes 3 dir newtest oneinside the other 
+wc –l <filename> -> from dir get number of lines in file
+wc -w <filename> -> get number of words
+cat <file1> <file1> > file3 -> concatenates file 1 and file 2 into a new file3
+paste <file1> <fil2> > <file3> || ex: paste ex1.acc ex1.dat > ex1.tot -> pastes files line by line so that line1 from file1 and line1 from file2 becomes line1 file3   
+awk '{print $2}' file -> prints column 2 in file to screen
+awk '{print $2}' file > file2 -> saves column 2 from file to file2
+awk '{print $2, $5}' file > file2 -> saves multible columns(2 and 5) from file to file2 || ex: awk '{print $2, $5}' ex1.tot > ex1.res
+sort -k2n,2 filename | tail -3 -> finder de 3 højeste tal i kolonne 2 og viser de matchene tal fra kolonne 1 || ex: sort -k2n,2 ex1.res | tail -3
+  
