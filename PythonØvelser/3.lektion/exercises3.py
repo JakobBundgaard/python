@@ -1,4 +1,4 @@
-
+import sys
 #
 
 # Ex.2
@@ -17,3 +17,8 @@ sold_out = [('Black', 'm'), ('White', 's')]
 
 clothesList2 = [item for item in clothesList if item not in sold_out]
 print(clothesList2)
+
+
+print("this is the name of the script", sys.argv[0])
+print("Number of arguments: ", len(sys.argv))
+print("The arguments are: ", str(sys.argv))
